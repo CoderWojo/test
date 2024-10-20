@@ -51,8 +51,4 @@ Future Development
 
 Author
 GitHub Username: CoderWojo,
-<<<<<<< HEAD
 Contact: wojciechwazny444@gmail.com.
-=======
-Contact: wojciechwazny444@gmail.com.
->>>>>>> b7d549f9ae805a02e13bb3296da4e9da5de66460
