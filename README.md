@@ -49,6 +49,8 @@ Future Development
 - Encrypt messages for security,
 - Implement user authentication.
 
+Project URL: https://roadmap.sh/projects/broadcast-server
+
 Author
 GitHub Username: CoderWojo,
 Contact: wojciechwazny444@gmail.com.
