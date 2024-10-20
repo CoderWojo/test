@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Server1 implements Runnable {
+public class Server implements Runnable {
     private ArrayList<ConnectionHandler> connections;
     private ServerSocket server;
     private boolean done; // czy wylaczamy serwer
     private ExecutorService pool;
 
-    public Server1() {
+    public Server() {
         this.done = false;
         connections = new ArrayList<>();
     }
@@ -122,7 +122,7 @@ public class Server1 implements Runnable {
     }
 
     public static void main(String[] args) {
-        Server1 server1 = new Server1();
-        server1.run();
+        Server server = new Server();
+        server.run();
     }
 }

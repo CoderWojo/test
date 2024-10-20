@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class Client1 implements Runnable{
+public class Client implements Runnable{
     private Socket client;
     // TO ZADANIE poniżej przeznaczymy dla oddzielnej klasy INNER
     private BufferedReader in;// odczytuj z serwera 
@@ -14,7 +14,7 @@ public class Client1 implements Runnable{
     private String host;
     private int port_number;
 
-    public Client1(String host, int port_number) {
+    public Client(String host, int port_number) {
         this.host = host;
         this.port_number = port_number;
         this.done = false;
@@ -84,7 +84,7 @@ public class Client1 implements Runnable{
     }
 
     public static void main(String[] args) {
-        Client1 client1 = new Client1("localhost", 9999);
-        client1.run();
+        Client client = new Client("localhost", 9999);
+        client.run();
     }
 }
